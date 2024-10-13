@@ -114,6 +114,7 @@ function DrumMachine() {
       >
         {sounds.map((sound) => (
           <Button
+            id={sound.display}
             key={sound.key}
             className="drum-pad"
             onClick={() => playSound(sound.key, sound.display)}
